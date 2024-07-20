@@ -28,6 +28,7 @@ elsif os_name =~ /linux/ && ENV['PREFIX'] == "/data/data/com.termux/files/usr"
   ruta = "/data/data/com.termux/files/home/.local/share/fish/fish_history"
 
   if File.exist?(ruta)
+    puts "la ruta existe"
     # abre el archivo y elimina el contenido
     File.open(File.expand_path(ruta), "w") {}
     puts "clean history"
