@@ -1,6 +1,5 @@
 # clean_fish_history.rb
 
-
 require 'rbconfig'
 
 # Obtener el nombre del sistema operativo
@@ -11,7 +10,7 @@ if os_name =~ /linux/ && File.exist?('/etc/debian_version')
   puts "El sistema operativo es Debian."
 
   # Especifica la ruta del archivo
-  ruta = "~/.local/share/fish/fish_history"
+  ruta = "/home/pepe/.local/share/fish/fish_history"
 
   if File.exist?(ruta)
     # abre el archivo y elimina el contenido
