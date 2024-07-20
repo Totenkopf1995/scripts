@@ -17,6 +17,7 @@ end
 
 # Verifica si los directorios existen
 if Dir.exist?(ruta1) && Dir.exist?(ruta2)
+  puts "las rutas existen"
   eliminar_contenido(ruta1)
   eliminar_contenido(ruta2)
   puts "clean tmp"
